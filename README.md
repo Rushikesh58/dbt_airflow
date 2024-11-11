@@ -1,4 +1,4 @@
-# Build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow)
+# ELT Pipeline (dbt, Snowflake, Airflow)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
