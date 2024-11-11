@@ -1,32 +1,28 @@
-###Build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow)
-Table of Contents
-Project Overview
-Technologies Used
-Architecture
-Setup Instructions
-Step 1: Setup Snowflake Environment
-Step 2: Configure dbt Profiles
-Step 3: Create Source and Staging Files
-Step 4: Create Macros
-Step 5: Transform Models (Fact Tables, Data Marts)
-Step 6: Testing with dbt
-Step 7: Deploying with Airflow
-Airflow DAG Configuration
+# Build an ELT Pipeline in 1 Hour (dbt, Snowflake, Airflow)
 
-Conclusion
-Project Overview
-This project demonstrates how to build an ELT (Extract, Load, Transform) pipeline using dbt (Data Build Tool), Snowflake, and Apache Airflow. The objective is to extract data from Snowflake's sample data, transform it using dbt models, and orchestrate the workflow using Airflow. The project follows best practices, including modular SQL files, reusable macros, and automated tests.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Architecture](#architecture)
+- [Conclusion](#conclusion)
 
-Technologies Used
-dbt (Data Build Tool) for data transformation and modeling
-Snowflake as the data warehouse
-Apache Airflow for orchestration and scheduling
-Docker for containerized development
-Python for scripting and automation
-Architecture
+## Project Overview
+This project demonstrates how to build an ELT (Extract, Load, Transform) pipeline using **dbt (Data Build Tool)**, **Snowflake**, and **Apache Airflow**. The objective is to extract data from Snowflake's sample data, transform it using dbt models, and orchestrate the workflow using Airflow. The project adheres to best practices, including modular SQL files, reusable macros, and automated tests.
+
+## Technologies Used
+- **dbt (Data Build Tool)**: For data transformation and modeling
+- **Snowflake**: As the data warehouse
+- **Apache Airflow**: For orchestration and scheduling
+- **Docker**: For containerized development
+- **Python**: For scripting and automation
+
+## Architecture
 The ELT pipeline is designed as follows:
+1. **Extract**: Data is extracted from Snowflake's sample TPCH dataset.
+2. **Load**: Raw data is loaded into Snowflake tables.
+3. **Transform**: dbt transforms the raw data into cleaned and aggregated tables.
+4. **Orchestrate**: Airflow schedules and monitors the entire pipeline.
 
-Extract: Data is extracted from Snowflake's sample TPCH dataset.
-Load: Raw data is loaded into Snowflake tables.
-Transform: dbt transforms the raw data into cleaned and aggregated tables.
-Orchestrate: Airflow schedules and monitors the entire pipeline.
+## Conclusion 
+This project showcases how to build a scalable and efficient ELT pipeline using dbt, Snowflake, and Airflow. The pipeline leverages best practices in data transformation, testing, and orchestration, ensuring a robust data workflow.
+Feel free to fork this repository and adapt it to your use case. Contributions and feedback are welcome!
